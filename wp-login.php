@@ -25,7 +25,7 @@
 		<div id="login">
 		<h1><a href="https://wordpress.org/">Powered by WordPress</a></h1>
 	
-		<form name="loginform" id="loginform" action="./" method="post">
+		<form name="loginform" id="loginform" action="./wp-login.php" method="post">
 			<p>
 				<label for="user_login">Username or Email Address</label>
 				<input type="text" name="log" id="user_login" class="input" value="" size="20" autocapitalize="off" />
@@ -49,7 +49,7 @@
 		</form>
 
 					<p id="nav">
-									<a href="./?action=lostpassword">Lost your password?</a>
+									<a href="./wp-login.php?action=lostpassword">Lost your password?</a>
 								</p>
 					<script type="text/javascript">
 			function wp_attempt_focus() {setTimeout( function() {try {d = document.getElementById( "user_login" );d.focus(); d.select();} catch( er ) {}}, 200);}
@@ -77,7 +77,10 @@ var _wpUtilSettings = {"ajax":{"url":"\/roabacial\/wp-admin\/admin-ajax.php"}};
 var userProfileL10n = {"warn":"Your new password has not been saved.","warnWeak":"Confirm use of weak password","show":"Show","hide":"Hide","cancel":"Cancel","ariaShow":"Show password","ariaHide":"Hide password"};
 </script>
 <script src='./wp-admin/js/user-profile.min.js?ver=5.4.1'></script>
-	<div class="clear"></div>
+	<script>
+	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+	</script>
+		<div class="clear"></div>
 	</body>
 	</html>
 	

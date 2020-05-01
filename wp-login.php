@@ -17,7 +17,11 @@
 	<meta name='robots' content='noindex,noarchive' />
 	<meta name='referrer' content='strict-origin-when-cross-origin' />
 		<meta name="viewport" content="width=device-width" />
-		</head>
+	<link rel="icon" href="./wp-content/uploads/2020/05/LogoMakr_1P2s5R-150x150.png" sizes="32x32" />
+<link rel="icon" href="./wp-content/uploads/2020/05/LogoMakr_1P2s5R-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="./wp-content/uploads/2020/05/LogoMakr_1P2s5R-300x300.png" />
+<meta name="msapplication-TileImage" content="./wp-content/uploads/2020/05/LogoMakr_1P2s5R-300x300.png" />
+	</head>
 	<body class="login no-js login-action-login wp-core-ui  locale-en-us">
 	<script type="text/javascript">
 		document.body.className = document.body.className.replace('no-js','js');
@@ -25,7 +29,7 @@
 		<div id="login">
 		<h1><a href="https://wordpress.org/">Powered by WordPress</a></h1>
 	
-		<form name="loginform" id="loginform" action="./wp-login.php" method="post">
+		<form name="loginform" id="loginform" action="./" method="post">
 			<p>
 				<label for="user_login">Username or Email Address</label>
 				<input type="text" name="log" id="user_login" class="input" value="" size="20" autocapitalize="off" />
@@ -49,7 +53,7 @@
 		</form>
 
 					<p id="nav">
-									<a href="./wp-login.php?action=lostpassword">Lost your password?</a>
+									<a href="./?action=lostpassword">Lost your password?</a>
 								</p>
 					<script type="text/javascript">
 			function wp_attempt_focus() {setTimeout( function() {try {d = document.getElementById( "user_login" );d.focus(); d.select();} catch( er ) {}}, 200);}
